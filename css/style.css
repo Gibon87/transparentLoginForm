@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: url(https://cdn.pixabay.com/photo/2017/08/31/20/14/blue-2702172_960_720.jpg);
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.box {
+  background: rgba( 0,0,0,.6);
+  box-shadow: 0 15px 25px rgba(0,0,0,.3);
+  border-radius: 2px;
+  left: 50%;
+  padding: 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 400px;
+}
+.box h2 {
+  color: #fff;
+  margin: 0 0 30px;
+  padding: 0;
+  text-align: center;
+}
+.box .inputBox {
+  position: relative;
+}
+.box .inputBox input {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  padding: 10px 0;
+  outline: none;
+  width: 100%;
+}
+.box .inputBox label {
+  color: #fff;
+  font-size: 16px;
+  left: 0;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  position: absolute;
+  pointer-events: none;
+  top: 0;
+  transition: .5s;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label {
+  color: #03a9f4;
+  font-size: 14px;
+  left: 0;
+  top: -22px;
+}
+.box input[type="submit"] {
+  background: #03a9f4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 12px;
+  padding: 10px 20px;
+  outline: none;
+}
